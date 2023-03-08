@@ -13,26 +13,17 @@ export const globalStyles = globalCss({
     '-webkit-font-smoothing': 'antialiased',
     display: 'flex',
     flexDirection: 'column',
+    height: '100vh',
     minHeight: '100vh',
-  },
-
-  header: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: 20,
+    fontFamily: '$roboto',
   },
 
   main: {
     flex: 1,
     padding: 20,
     width: '100%',
+    minHeight: '100vh',
     maxWidth: '1200px',
     margin: '0 auto',
-  },
-
-  footer: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: 10,
   },
 })

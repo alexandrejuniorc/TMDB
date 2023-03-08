@@ -1,4 +1,11 @@
 import { createStitches } from '@stitches/react'
+import { Roboto } from 'next/font/google'
+
+const fontRoboto = Roboto({
+  subsets: ['latin'],
+  weight: ['700'],
+  variable: '--roboto-font',
+})
 
 export const {
   styled,
@@ -20,7 +27,12 @@ export const {
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
 
+      yellow500: '#D18000',
+
       gray500: 'hsl(206,10%,76%)',
+
+      white: '#FFF',
+      black: '#000',
     },
     space: {
       1: '5px',
@@ -33,6 +45,7 @@ export const {
       3: '15px',
     },
     fonts: {
+      roboto: `${fontRoboto.variable}, sans-serif`,
       poppins: 'Poppins',
     },
     fontWeights: {},

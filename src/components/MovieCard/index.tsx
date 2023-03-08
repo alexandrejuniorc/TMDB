@@ -16,7 +16,7 @@ export const MovieCard = ({
 }: MovieCardProps) => {
   return (
     <MovieCardContainer key={id}>
-      <img src={imageUrl} alt={title} width="176px" height="264px" />
+      <img src={imageUrl} alt={title} />
       <h3>{title}</h3>
       <p>{releaseDate}</p>
     </MovieCardContainer>
